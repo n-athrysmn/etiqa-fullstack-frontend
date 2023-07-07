@@ -1,27 +1,87 @@
-# NoraathirayasminEtiqaFullstack
+<div align="center">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+  <p align="center">
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</div>
 
-## Development server
+<!-- ABOUT THE PROJECT -->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## About The Project
 
-## Code scaffolding
+This project was done in accordance to Etiqa IT Full Stack Developer Assessment.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Built With
 
-## Build
+The following technologies were used in this project:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [![Angular][Angular.io]][Angular-url]
+- [![GitHub][GitHub]][GitHub-url]
+- [![NPM][NPM]][NPM-url]
 
-## Running unit tests
+<!-- GETTING STARTED -->
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+To get this application running in your system, please follow the instructions below:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Prerequisites
 
-## Further help
+To get started, you must have the following in your local machine:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- nodejs
+- npm
+- vscode (optional)
+
+### Installation
+
+After having the prerequisites technologies, you can follow the step below to run this project in your local machine.
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/n-athrysmn/etiqa-fullstack-frontend.git
+   ```
+2. Open the project in VS Code (or any code editor/ide of your choosing). You can also open terminal and type the following.
+   ```sh
+   code .
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Run the project
+   ```js
+   ng serve
+   ```
+
+<!-- CONTACT -->
+
+## Contact
+
+Nora Athira Yasmin Binti Kassim - [LinkedIn Profile](https://www.linkedin.com/in/noraathira/) - athira.ysmn@gmail.com
+
+Project Link: [Link to repo](https://github.com/n-athrysmn/etiqa-fullstack-frontend)
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+- [GitHub badges](https://github.com/Ileriayo/markdown-badges)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[Mongodb]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
+[Mongodb-url]: https://www.mongodb.com/
+[GitHub]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[GitHub-url]: https://github.com/
+[NPM]: https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white
+[NPM-url]: https://www.npmjs.com/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
