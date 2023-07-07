@@ -1,0 +1,64 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="90%">
+      <mat-card-content>
+        <mat-toolbar color="primary">
+          List of Users
+        </mat-toolbar>
+        <table>
+          <thead>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Skillsets</th>
+            <th>Hobby</th>
+            <th colspan="2">Actions</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{ user.username }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.phone }}</td>
+              <td>{{ user.skills }}</td>
+              <td>{{ user.hobby }}</td>
+              <td><button mat-raised-button type="button" color="primary" (click)="openEditDialog(user)">Edit</button></td>
+              <td><button mat-raised-button type="button" color="warn" (click)="deleteUser(user._id)">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+  <ng-template #editUserDialog let-dialogRef>
+    <h1 mat-dialog-title>Edit User Data</h1>
+    <div mat-dialog-content fxFlex="90%">
+      <form fxLayoutAlign="stretch" fxLayout="column" class="form">
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input matInput [(ngModel)]="editedUser.username" name="username" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="editedUser.email" name="email" type="email" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Phone Number</mat-label>
+          <input matInput [(ngModel)]="editedUser.phone" name="phone" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Skillsets</mat-label>
+          <textarea matInput [(ngModel)]="editedUser.skills" name="skills" required></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Hobby</mat-label>
+          <textarea matInput [(ngModel)]="editedUser.hobby" name="hobby" required></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput [(ngModel)]="editedUser.password" name="password" type="password" required>
+        </mat-form-field>
+        <button mat-raised-button type="submit" color="primary" (click)="saveEdit()">Save Edit</button>
+      </form>
+    </div>
+  </ng-template>
+  

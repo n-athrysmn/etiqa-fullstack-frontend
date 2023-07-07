@@ -1,0 +1,39 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="50%">
+      <mat-toolbar color="primary">
+        Register
+      </mat-toolbar>
+      <mat-card-content>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="form" (ngSubmit)="register()">
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput [(ngModel)]="user.username" name="username" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="user.email" name="email" type="email" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+            <input matInput [(ngModel)]="user.phone" name="phone" required>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Skillsets</mat-label>
+            <textarea matInput [(ngModel)]="user.skills" name="skills" required></textarea>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Hobby</mat-label>
+            <textarea matInput [(ngModel)]="user.hobby" name="hobby" required></textarea>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)]="user.password" name="password" type="password" required>
+          </mat-form-field>
+          <button mat-raised-button type="submit" color="primary">Register</button>
+        </form>
+      </mat-card-content>
+      <mat-card-footer>
+        <p>Already registered? <a (click)="goToLogin()" class="link">Login Here</a></p>
+      </mat-card-footer>
+    </mat-card>
+  </div>
